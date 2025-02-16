@@ -12,8 +12,7 @@ public class SpringBootLearningApplication {
 		SpringApplication.run(SpringBootLearningApplication.class, args);
 		System.out.println("hi.......");
 
-	}
-	
+	}	
 	
 }
   
