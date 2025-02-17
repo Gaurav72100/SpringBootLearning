@@ -15,7 +15,7 @@ public class UesrController {
 	private UserService userservice;
 	
 	@PostMapping
-	public MyUser getAllUser(@RequestBody MyUser user ) {
+	public MyUser saveAllUser(@RequestBody MyUser user ) {
 		System.out.println("Controller.....");
 		userservice.saveAllUser(user);
 		
