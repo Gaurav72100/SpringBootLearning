@@ -4,6 +4,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.Size;
+
 
 @Entity
 public class MyUser {
@@ -11,7 +13,12 @@ public class MyUser {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Integer id;
+	
+	@Size(min=2,message="Name is too short")
 	private String name;
+	
+	
+	
 	private String address;
 	private int street_no;
 	
